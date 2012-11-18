@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/device_comancheatt.mk
+    $(LOCAL_DIR)/device_comanche.mk

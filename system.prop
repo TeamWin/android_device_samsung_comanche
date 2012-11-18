@@ -1,5 +1,5 @@
 #
-# system.prop for comancheatt
+# system.prop for comanche
 #
 
 rild.libpath=/system/lib/libril-qc-qmi-1.so
@@ -146,8 +146,8 @@ ro.ril.gprsclass=10
 ro.adb.qemud=1
 ro.setupwizard.mode=OPTIONAL
 ro.com.google.apphider=off
-ro.com.google.clientidbase.ms=android-att-us
-ro.com.google.clientidbase.am=android-att-us
+ro.com.google.clientidbase.ms=android--us
+ro.com.google.clientidbase.am=android--us
 ro.com.google.clientidbase.yt=android-samsung
 ro.com.google.clientidbase.gmm=android-samsung
 ro.com.google.gmsversion=4.0_r5
