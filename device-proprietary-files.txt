@@ -16,9 +16,9 @@ etc/thermald.conf_N
 etc/thermald.conf_S
 
 # Bluetooth firmware
-bin/bcm4334.hcd
-bin/bcm4334_murata.hcd
-bin/bcm4334_semco.hcd
+#bin/bcm4334.hcd
+#bin/bcm4334_murata.hcd
+#bin/bcm4334_semco.hcd
 
 # Audio
 #lib/hw/alsa.msm8960.so
@@ -46,7 +46,7 @@ lib/egl/libGLESv1_CM_adreno200.so
 lib/egl/libGLESv2_adreno200.so
 lib/egl/libq3dtools_adreno200.so
 lib/egl/libGLESv2S3D_adreno200.so
-lib/libc2d2_z180.so
+#lib/libc2d2_z180.so
 lib/libgsl.so
 lib/libC2D2.so
 lib/libOpenVG.so
@@ -54,8 +54,8 @@ lib/libsc-a2xx.so
 etc/firmware/a225p5_pm4.fw
 etc/firmware/a225_pfp.fw
 etc/firmware/a225_pm4.fw
-etc/firmware/yamato_pfp.fw
-etc/firmware/yamato_pm4.fw
+#etc/firmware/yamato_pfp.fw
+#etc/firmware/yamato_pm4.fw
 etc/firmware/leia_pfp_470.fw
 etc/firmware/leia_pm4_470.fw
 
@@ -112,13 +112,13 @@ vendor/firmware/libpn544_fw.so
 bin/geomagneticd
 bin/orientationd
 lib/hw/sensors.msm8960.so
-lib/libakmd.so
+#lib/libakmd.so
 lib/libAKM.so
-lib/libinvensense_hal.so
-lib/libmllite.so
-lib/libmlplatform.so
-lib/libyamaha.so
-lib/libmplmpu.so
+#lib/libinvensense_hal.so
+#lib/libmllite.so
+#lib/libmlplatform.so
+#lib/libyamaha.so
+#lib/libmplmpu.so
 
 # Camera
 bin/mm-qcamera-daemon
@@ -126,7 +126,7 @@ lib/hw/camera.msm8960.so
 lib/libmmjpeg.so
 lib/libmmstillomx.so
 lib/libimage-jpeg-enc-omx-comp.so
-lib/libvdis.so
+#lib/libvdis.so
 lib/libsecnativefeature.so
 lib/libgemini.so
 lib/liboemcamera.so
@@ -146,12 +146,12 @@ lib/libchromatix_s5k6a3yx_vt_hd.so
 lib/libchromatix_s5k6a3yx_vt.so
 
 # Camera firmware
-cameradata/SlimISP_GC.bin
-cameradata/SlimISP_GD.bin
-cameradata/SlimISP_GE.bin
-cameradata/SlimISP_ZC.bin
-cameradata/SlimISP_ZD.bin
-cameradata/SlimISP_ZE.bin
+#cameradata/SlimISP_GC.bin
+#cameradata/SlimISP_GD.bin
+#cameradata/SlimISP_GE.bin
+#cameradata/SlimISP_ZC.bin
+#cameradata/SlimISP_ZD.bin
+#cameradata/SlimISP_ZE.bin
 cameradata/datapattern_420sp.yuv
 cameradata/datapattern_front_420sp.yuv
 
@@ -160,19 +160,19 @@ lib/libdiag.so
 
 # Wi-Fi
 bin/macloader
-bin/brcm_poke_helper
-etc/wifi/bcmdhd_apsta.bin_b1
-etc/wifi/bcmdhd_apsta.bin_b2
-etc/wifi/bcmdhd_p2p.bin_b1
-etc/wifi/bcmdhd_p2p.bin_b2
-etc/wifi/bcmdhd_sta.bin_b1
-etc/wifi/bcmdhd_sta.bin_b2
-etc/wifi/bcmdhd_mfg.bin_b1
-etc/wifi/bcmdhd_mfg.bin_b2
-etc/wifi/nvram_mfg.txt
-etc/wifi/nvram_mfg.txt_murata
-etc/wifi/nvram_net.txt
-etc/wifi/nvram_net.txt_murata
+#bin/brcm_poke_helper
+#etc/wifi/bcmdhd_apsta.bin_b1
+#etc/wifi/bcmdhd_apsta.bin_b2
+#etc/wifi/bcmdhd_p2p.bin_b1
+#etc/wifi/bcmdhd_p2p.bin_b2
+#etc/wifi/bcmdhd_sta.bin_b1
+#etc/wifi/bcmdhd_sta.bin_b2
+#etc/wifi/bcmdhd_mfg.bin_b1
+#etc/wifi/bcmdhd_mfg.bin_b2
+#etc/wifi/nvram_mfg.txt
+#etc/wifi/nvram_mfg.txt_murata
+#etc/wifi/nvram_net.txt
+#etc/wifi/nvram_net.txt_murata
 etc/wifi/wpa_supplicant.conf
 
 # Firmware
