@@ -12,9 +12,9 @@ TARGET_SPECIFIC_HEADER_PATH := device/samsung/comanche/include
 -include vendor/samsung/comanche/BoardConfigVendor.mk
 
 # Kernel
-#TARGET_PREBUILT_KERNEL      := device/samsung/comanche/kernel
-TARGET_KERNEL_SOURCE        := kernel/samsung/comanche_samsung
-TARGET_KERNEL_CONFIG        := comanche_rev02_defconfig
+TARGET_PREBUILT_KERNEL      := device/samsung/comanche/kernel
+#TARGET_KERNEL_SOURCE        := kernel/samsung/comanche_samsung
+#TARGET_KERNEL_CONFIG        := comanche_rev02_defconfig
 BOARD_KERNEL_CMDLINE        := console=null androidboot.hardware=qcom user_debug=31
 BOARD_KERNEL_BASE           := 0x80200000
 BOARD_FORCE_RAMDISK_ADDRESS := 0x81500000
@@ -57,11 +57,14 @@ TARGET_NO_HW_VSYNC := true
 
 # TWRP
 DEVICE_RESOLUTION := 480x800
+RECOVERY_SDCARD_ON_DATA := true
 TW_DEFAULT_EXTERNAL_STORAGE := true
 TW_INTERNAL_STORAGE_PATH := "/data/media"
 TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
 TW_EXTERNAL_STORAGE_PATH := "/external_sd"
 TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
-SP1_NAME := "boot"
-SP1_BACKUP_METHOD := image
-SP1_MOUNTABLE := 0
+#SP1_NAME := "boot"
+#SP1_BACKUP_METHOD := image
+#SP1_MOUNTABLE := 0
+BOARD_HAS_NO_REAL_SDCARD := true
+TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"

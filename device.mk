@@ -36,6 +36,9 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     ueventd.qcom.rc
 
+PRODUCT_COPY_FILES += \
+    device/samsung/comanche/rootdir/etc/initlogo.rle:recovery/root/initlogo.rle
+
 # Torch
 PRODUCT_PACKAGES += Torch
 
@@ -90,7 +93,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 $(call inherit-product, device/samsung/msm8960-common/msm8960.mk)
 
 # Proper hdpi support
-$(call inherit-product, frameworks/native/build/phone-hdpi-dalvik-heap.mk)
+#$(call inherit-product, frameworks/native/build/phone-hdpi-dalvik-heap.mk)
 
 # Device vendor
 $(call inherit-product-if-exists, vendor/samsung/comanche/comanche-vendor.mk)
