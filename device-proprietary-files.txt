@@ -182,3 +182,5 @@ etc/firmware/vidc_1080p.fw
 # Perf
 lib/libqc-opt.so
 
+# Comanche specific
+lib/libwvm.so
