@@ -3,6 +3,8 @@
 # against the traditional rules of inheritance).
 USE_CAMERA_STUB := true
 
+TARGET_SPECIFIC_HEADER_PATH := device/samsung/comanche/include
+
 # inherit from common msm8960
 -include device/samsung/msm8960-common/BoardConfigCommon.mk
 
@@ -43,4 +45,7 @@ TARGET_NO_INITLOGO := true
 BOARD_HAVE_AUDIENCE_A2220 := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := comanche
+TARGET_OTA_ASSERT_DEVICE := comanche,SGH-I547
+
+# Graphics fixups
+#TARGET_NO_HW_VSYNC := true

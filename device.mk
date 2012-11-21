@@ -16,6 +16,11 @@ PRODUCT_AAPT_PREF_CONFIG := hdpi
 TARGET_SCREEN_HEIGHT := 800
 TARGET_SCREEN_WIDTH := 480
 
+# Keymaps (comanche has extra key / non-standard keymaps compared to msm8960-common)
+PRODUCT_COPY_FILES += \
+    device/samsung/comanche/overlay/device/samsung/msm8960-common/keylayout/sec_keys.kl:system/usr/keylayout/sec_keys.kl \
+    device/samsung/comanche/overlay/device/samsung/msm8960-common/keylayout/sec_touchkey.kl:system/usr/keylayout/sec_touchkey.kl
+
 # Audio configuration
 PRODUCT_COPY_FILES += \
     device/samsung/comanche/audio/snd_soc_msm_2x:system/etc/snd_soc_msm/snd_soc_msm_2x \
@@ -40,7 +45,8 @@ PRODUCT_COPY_FILES += \
 
 # Set default USB interface
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    persist.sys.usb.config=mtp
+    persist.sys.usb.config=mtp \
+    persist.service.adb.enable=1
 
 # Lights
 PRODUCT_PACKAGES += lights.msm8960
@@ -62,7 +68,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.apm_sim_not_pwdn=1 \
     persist.gps.qmienabled=true \
     ro.telephony.call_ring.multiple=0 \
-    ro.sf.lcd_density=320 \
+    ro.sf.lcd_density=240 \
     ro.ril.transmitpower=true \
     ro.opengles.version=131072 \
     persist.audio.fluence.mode=endfire \
@@ -71,7 +77,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.audio.speaker.location=high \
     ro.qc.sdk.audio.fluencetype=fluence \
     persist.timed.enable=true \
-    ro.emmc.sdcard.partition=17 \
+    ro.emmc.sdcard.partition=15 \
     ro.use_data_netmgrd=true \
     persist.data_netmgrd_nint=16 \
     lpa.decode=true \
@@ -81,6 +87,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # common msm8960
 $(call inherit-product, device/samsung/msm8960-common/msm8960.mk)
+
+# Proper hdpi support
+$(call inherit-product, frameworks/native/build/phone-hdpi-dalvik-heap.mk)
 
 # Device vendor
 $(call inherit-product-if-exists, vendor/samsung/comanche/comanche-vendor.mk)
